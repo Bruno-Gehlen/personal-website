@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Secreto"
+AuthUserFile /files/safe/.htpasswd
+Require valid-user
