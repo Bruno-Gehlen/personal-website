@@ -1,14 +1,26 @@
+index.html
 <!doctype html>
 <html> 
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Bruno Gehlen - Site Pessoal</title>
-  <link rel="stylesheet" href="assets/style.css"> 
- </head> 
- <body> 
+  <link rel="stylesheet" href="assets/style.css">
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+     processEscapes: true
+    }
+  });
+</script>
+</head> 
+ <body class="portugues">
+  <button onclick="trocarIdioma()">English</button>
   <header> 
-   <h1>Seja bem-vindo(a)!!🍃</h1> <!--<nav> 
+   <h1>Seja bem-vindo(a)!🍃</h1> 
+   <!--<nav> 
     <ul> 
      <li><a href="#sobre">Sobre</a></li> 
      <li><a href="#estudos">Estudos</a></li> 
@@ -18,11 +30,11 @@
    </nav>--> 
   </header> 
   <section id="home"> 
-   <p>Este é o meu site pessoal e aqui você pode encontrar informações sobre mim e meus projetos.</p> 
+   <p>Este é o meu site pessoal e aqui você pode encontrar informações sobre mim e meus projetos. $$ S = \int_{t_1}^{t_2} L(q_j, \dot{q}_j,t) dt $$</p> 
   </section> 
   <section id="sobre"> 
    <h2>Sobre mim</h2> 
-   <p> Meu nome é Bruno Gehlen, estou no 5° semestre do Bacharelado em Física da Universidade de São Paulo, e atualmente estou começando a explorar a área da Física de Partículas. </p> 
+   <p> Meu nome é Bruno Gehlen, estou no 5° semestre do Bacharelado em Física da Universidade de São Paulo, e atualmente estou começando a explorar a área da Física de Partículas.</p> 
    <p> Você pode visualizar o meu CV <a href="files/CV.pdf">aqui</a>.</p> 
   </section> <!--<section id="estudos"> 
    <h2>Estudos</h2> 
@@ -59,6 +71,21 @@
   </section> 
   <footer> 
    <p>© Desenvolvido por Bruno Gehlen - 2023</p> 
-  </footer> 
+  </footer>
+  <script>
+        function trocarIdioma() {
+            // Verifica qual página estamos atualmente
+            var paginaAtual = window.location.href;
+            
+            // Se estivermos na página em português, redirecionamos para a página em inglês
+            if (paginaAtual.includes("_pt")) {
+                window.location.href = paginaAtual.replace("_pt", "_en");
+            }
+            // Se estivermos na página em inglês, redirecionamos para a página em português
+            else if (paginaAtual.includes("_en")) {
+                window.location.href = paginaAtual.replace("_en", "_pt");
+            }
+        }
+    </script>
  </body>
 </html>
