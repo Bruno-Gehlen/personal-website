@@ -23,13 +23,13 @@
       text-align: center;
     }
     a {
-      color: #00ffff;
+      color: #5eacfd;
     }
 
     a:visited {
-      color: #cc99ff;
+      color: #f673c3;
     }
 
     a:hover, a:active {
-      color: #ff9999;
+      color: #aa90e0;
     }
