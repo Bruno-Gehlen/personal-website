@@ -16,7 +16,6 @@
 </script>
  </head> 
  <body class="portugues">
-  <button onclick="trocarIdioma()">English</button> 
   <header> 
    <h1>Seja bem-vindo(a)!🍃</h1> 
    <!--<nav> 
@@ -71,20 +70,5 @@
   <footer> 
    <p>© Desenvolvido por Bruno Gehlen - 2023</p> 
   </footer>
-  <script>
-    function trocarIdioma() {
-        // Verifica qual página estamos atualmente
-        var paginaAtual = window.location.href;
-        
-        // Se estivermos na página em português, redirecionamos para a página em inglês
-        if (paginaAtual.includes("_pt")) {
-            window.location.href = paginaAtual.replace("_pt", "_en");
-        }
-        // Se estivermos na página em inglês, redirecionamos para a página em português
-        else if (paginaAtual.includes("_en")) {
-            window.location.href = paginaAtual.replace("_en", "_pt");
-        }
-    }
-  </script> 
  </body>
 </html>
