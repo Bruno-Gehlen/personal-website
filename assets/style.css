@@ -7,15 +7,6 @@ body.portugues {
       background-color: #333333; /* cor do fundo da página */
       font-family: "Times New Roman", Times, serif;
     }
-body.english {
-      text-align: justify;
-      margin: 0 auto;
-      max-width: 800px; /* define a largura máxima do conteúdo */
-      padding: 0 20px; /* adiciona margem interna nas laterais */
-      color: white; /* cor do texto do corpo */
-      background-color: #333333; /* cor do fundo da página */
-      font-family: "Times New Roman", Times, serif;
-    }    
     ul {
       text-align: justify;
       list-style-position: inside;
