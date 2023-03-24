@@ -1,4 +1,3 @@
-index.html
 <!doctype html>
 <html> 
  <head> 
@@ -15,9 +14,8 @@ index.html
     }
   });
 </script>
-</head> 
- <body class="portugues">
-  <button onclick="trocarIdioma()">English</button>
+ </head> 
+ <body> 
   <header> 
    <h1>Seja bem-vindo(a)!🍃</h1> 
    <!--<nav> 
@@ -46,7 +44,7 @@ index.html
    <h2>Projetos</h2> 
    <ul> 
     <li>(W.I.P) <a href="em breve">M. Q. p. i.</a></li> 
-    <li>(W.I.P) <a href="nada por enquanto<!--https://1drv.ms/f/s!ArVdXDA91PSdzxyahiM1o8C9U5Mn-->">Biblioteca</a>.</li> 
+    <li>(W.I.P) <a href="nada por enquanto"><!--https://1drv.ms/f/s!ArVdXDA91PSdzxyahiM1o8C9U5Mn-->">Biblioteca</a>.</li> 
     <li>... </li> 
    </ul> 
   </section> 
@@ -71,21 +69,6 @@ index.html
   </section> 
   <footer> 
    <p>© Desenvolvido por Bruno Gehlen - 2023</p> 
-  </footer>
-  <script>
-        function trocarIdioma() {
-            // Verifica qual página estamos atualmente
-            var paginaAtual = window.location.href;
-            
-            // Se estivermos na página em português, redirecionamos para a página em inglês
-            if (paginaAtual.includes("_pt")) {
-                window.location.href = paginaAtual.replace("_pt", "_en");
-            }
-            // Se estivermos na página em inglês, redirecionamos para a página em português
-            else if (paginaAtual.includes("_en")) {
-                window.location.href = paginaAtual.replace("_en", "_pt");
-            }
-        }
-    </script>
+  </footer> 
  </body>
 </html>
