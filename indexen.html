@@ -1,0 +1,90 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Bruno Gehlen - Personal Website</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+     processEscapes: true
+    }
+  });
+</script>
+ </head> 
+ <body class="english">
+  <button onclick="trocarIdioma()">English</button> 
+  <header> 
+   <h1>Welcome!🍃</h1> 
+   <!--<nav> 
+    <ul> 
+     <li><a href="#sobre">Sobre</a></li> 
+     <li><a href="#estudos">Estudos</a></li> 
+     <li><a href="#projetos">Projetos</a></li> 
+     <li><a href="#contato">Contato</a></li>; 
+    </ul>
+   </nav>--> 
+  </header> 
+  <section id="home"> 
+   <p>This is my personal website and here you can find information about me and my projects. $$ S = \int_{t_1}^{t_2} L(q_j, \dot{q}_j,t) dt $$</p> 
+  </section> 
+  <section id="about"> 
+   <h2>About me</h2> 
+   <p> My name is Bruno Gehlen, I'm in the 5th semester of the Bachelor of Physics at the University of São Paulo, and I'm currently starting to explore the area of Particle Physics.</p> 
+   <p> You can view my CV <a href="files/CV.pdf">here</a>.</p> 
+  </section> <!--<section id="estudos"> 
+   <h2>Estudos</h2> 
+   <ul> 
+    <li>Bacharelado em Física - Universidade de São Paulo</li> 
+   </ul> 
+  </section>--> 
+  <section id="projects"> 
+   <h2>Projects</h2> 
+   <ul> 
+    <li>(W.I.P) <a href="em breve">Q. M. f. B.</a></li> 
+    <li>(W.I.P) <a href="nada por enquanto"><!--https://1drv.ms/f/s!ArVdXDA91PSdzxyahiM1o8C9U5Mn-->Library</a>.</li> 
+    <li>... </li> 
+   </ul> 
+  </section> 
+  <section id="utilities"> 
+   <h2>Utilities</h2> 
+   <ul> 
+    <li> Teachers 
+     <ul> 
+      <li> <a href="http://www.hfleming.com/rosto2.php">Henrique Fleming - Personal Website</a> </li> 
+      <li> <a href="http://fma.if.usp.br/~jbarata/">João C. A. Barata - Personal Website</a> </li> 
+      <li> ... </li> 
+     </ul> </li> 
+   </ul> 
+  </section> 
+  <section id="contact"> 
+   <h2>Contact</h2> 
+   <p>You can contact me by:</p> 
+   <ul> 
+    <li>Email: <a href="mailto: brunogfdsilva@usp.br">brunogfdsilva@usp.br</a> </li> 
+    <li>Github: github.com/Bruno-Gehlen</li> 
+   </ul> 
+  </section> 
+  <footer> 
+   <p>© Developed by Bruno Gehlen - 2023</p> 
+  </footer>
+  <script>
+    function trocarIdioma() {
+        // Verifica qual página estamos atualmente
+        var paginaAtual = window.location.href;
+        
+        // Se estivermos na página em português, redirecionamos para a página em inglês
+        if (paginaAtual.includes("_pt")) {
+            window.location.href = paginaAtual.replace("_pt", "_en");
+        }
+        // Se estivermos na página em inglês, redirecionamos para a página em português
+        else if (paginaAtual.includes("_en")) {
+            window.location.href = paginaAtual.replace("_en", "_pt");
+        }
+    }
+  </script> 
+ </body>
+</html>
