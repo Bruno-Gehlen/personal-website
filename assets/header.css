@@ -1,5 +1,6 @@
 header-container {
   max-width: 100%;
+  align-content: center;
 }
 
 header {
@@ -8,6 +9,7 @@ header {
   max-width: 960px;
   margin: 0 auto; /* centraliza o cabeçalho horizontalmente */
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   padding: 20px;
   background-color: #404040;
