@@ -2,14 +2,16 @@
 <html> 
  <head> 
   <meta charset="UTF-8"> 
-  <meta name="description" content="Este é um site acadêmico que fala sobre física e assuntos acadêmicos.">
+  <meta name="description" content="Este é um site que fala sobre física e assuntos acadêmicos.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Bruno Gehlen">
   <meta name="keywords" content="física, USP, IFUSP, ciências, universidade, pesquisa">
+  <script src="scripts/header.js"></script>
   
   <title>Bruno Gehlen - Site Pessoal</title>
   
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/header.css">
   <link rel="icon" type="image/png" href="files/science.png">
   
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -24,17 +26,24 @@
 </head> 
 
  <body>
-  <header> 
-   <h1>Seja bem-vindo(a)!🍃</h1> 
-   <!--<nav> 
-    <ul> 
-     <li><a href="#sobre">Sobre</a></li> 
-     <li><a href="#estudos">Estudos</a></li> 
-     <li><a href="#projetos">Projetos</a></li> 
-     <li><a href="#contato">Contato</a></li>; 
+  <header>
+   <div id="header-container">
+   <div class="logo">
+    <img src="files/science.png" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
-   </nav>--> 
-  </header> 
+  </nav>
+  <div class="search">
+    <input type="text" placeholder="Pesquisar">
+    <button>Pesquisar</button>
+  </div>
+  <h1>Seja bem-vindo(a)!🍃</h1>
+  </header>
+  </div>
   <section id="home">
   <hr> 
    <p>Este é o meu site pessoal e aqui você pode encontrar informações sobre mim e meus projetos. $$ S = \int_{t_1}^{t_2} L(q_j, \dot{q}_j,t) dt $$</p>
