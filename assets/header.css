@@ -19,6 +19,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 15px;
 }
 
 nav li {
@@ -27,13 +28,20 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #5eacfd;
   font-weight: bold;
+}
+nav a:visited {
+  color: #f673c3;
+}
+nav a:hover, a:active {
+  color: #aa90e0;
 }
 
 .search {
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 .search input {
