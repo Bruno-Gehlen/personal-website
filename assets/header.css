@@ -10,7 +10,8 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 65px;
+  margin-top: 15px; /* aumenta a margem superior em 50 pixels */
 }
 
 nav ul {
