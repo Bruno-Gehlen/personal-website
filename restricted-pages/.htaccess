@@ -1,4 +1,4 @@
+AuthUserFile /restricted-pages/.htpasswd
 AuthType Basic
 AuthName "Área restrita"
-AuthUserFile /restricted-pages/.htpasswd
 Require valid-user
