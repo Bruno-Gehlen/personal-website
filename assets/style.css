@@ -27,9 +27,12 @@
     }
 
     a:visited {
-      color: #f673c3;
+      color: #5eacfd/*#f673c3*/;
     }
 
     a:hover, a:active {
-      color: #aa90e0;
+      color: #5eacfd/*#aa90e0*/;
+    }
+    footer {
+        text-align: center;
     }
