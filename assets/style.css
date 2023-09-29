@@ -18,7 +18,7 @@ body {
   padding: 16px;
   height: 100%;
   text-align: justify;
-  max-width: 800px; /* define a largura máxima do conteúdo */
+  /*max-width: 1380px; /* define a largura máxima do conteúdo */
   padding: 8px; /* adiciona margem interna nas laterais */
   color: white; /* cor do texto do corpo */
   background-color: #333333; /* cor do fundo da página */
