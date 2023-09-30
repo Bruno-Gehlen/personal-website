@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --primary-color: #303030;
+    --primary-color-dark: #1a1a1a;    
+    --button-color: #5433FF;
+    --button-color-shadow: #5433FF30;
+    --text-color: white;
+    --nav-width: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+
+.background {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    opacity: 0.5;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+    width: 80px;
+    padding: 1.5rem 0.85rem;
+    color: var(--text-color);
+    display: inline-block;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+.hidden-div {
+  width: calc(100% - 0.8var(--nav-width));
+  padding: 0cm 0px 0cm 0px;
+  box-sizing: border-box; 
+  margin-left: 1em; 
+  margin-right: 1em;
+  color: var(--text-color);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-top .logo {
+  position: relative;
+  width: 40px;
+  
+  left: 4px;
+}
+
+.sidebar-links ul {
+  list-style-type: none;
+  position: relative;
+  text-align: justify;
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.sidebar-links li {
+  position: relative;
+}
+
+.sidebar-links li a {
+  padding: 13px;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-links .active {
+  width: 100%;
+  text-decoration: none;
+  background-color: var(--primary-color-dark);
+  transition: all 100ms ease-in;
+  border-radius: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+/*####################################*/
+
+body {
+  background-color: #1b1b1b;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: top; 
+  width: calc(100% - var(--nav-width));
+  padding: 0cm 20px 0cm 20px;
+  box-sizing: border-box; 
+  margin-left: 1em; 
+  margin-right: 1em;
+  color: var(--text-color);
+}
+
+ul {
+  text-align: justify;
+  list-style-position: inside;
+  padding-left: 13px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 1.5em;
+}
+header h1 {
+  text-align: center;
+  
+}
+
+section h2 {
+  text-align: center;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #5eacfd/*#aa90e0*/;
+}
+
+footer {
+    text-align: center;
+}
+

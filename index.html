@@ -11,8 +11,8 @@
           href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
           rel="stylesheet"
       >
-      <link rel="stylesheet" href="assets/style.css">
-      <link rel="icon" type="image/png" href="assets/science.png">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="icon" type="image/png" href="assets/visuals/science.png">
       <script>
         MathJax = {
           tex: {
@@ -28,10 +28,10 @@
         </script>
     </head>
     <body>
-        <nav>
+        <nav id="myNav">
             <div class="sidebar-top">
               <img
-                src="assets/science.png"
+                src="assets/visuals/science.png"
                 class="logo"
                 alt="Logo"
               >
@@ -41,42 +41,40 @@
                 <li>
                   <a href="#about" title="Sobre Mim">
                     <div class="icon">
-                      <img src="assets/about-svgrepo-com.svg" title="Sobre Mim">
+                      <img src="assets/visuals/about-svgrepo-com.svg" title="Sobre Mim">
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#project" title="Projetos">
                     <div class="icon">
-                        <img src="assets/project-svgrepo-com.svg" title="Projetos">
+                        <img src="assets/visuals/project-svgrepo-com.svg" title="Projetos">
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#contact" title="Contato">
                     <div class="icon">
-                        <img src="assets/contact-details-svgrepo-com.svg" title="Contato">
+                        <img src="assets/visuals/contact-details-svgrepo-com.svg" title="Contato">
                     </div>
                   </a>
                 </li>
               </ul>
             </div>
           </nav>
-          <script src="scripts/script.js"></script>
-          <div class="content">
+          <div id="myDiv" class="content">
             <br>
-            <h1 align="center">Seja bem-vindo(a)!🍃</h1>
+            <h1 align="center">Seja bem-vindo(a)! 🍃</h1>
             <br>
 
             <section id="home">
                <p>Este é o meu site pessoal e aqui você pode encontrar informações sobre mim e meus projetos.</p>
                <p> $$ (\square + m^2)\phi=0 $$ </p>
               </section>
-              
-              <br>
               <hr>
               <section id="about"> 
                <h2>Sobre mim</h2> 
+               <br>
                <p> Estou no 6° semestre do Bacharelado em Física da Universidade de São Paulo, e atualmente explorando a área da Física de Partículas.</p> 
                <p> Meu CV Lattes pode ser visualizado <a href="http://lattes.cnpq.br/2794653740713400">aqui</a>.</p>
               </section> 
@@ -85,6 +83,7 @@
               <hr>
               <section id="project"> 
                <h2>Projetos</h2> 
+               <br>
                <ul> 
                 <li>(W.I.P) <a href="em breve">T.d.C.</a></li> 
                 <li>... </li> 
@@ -95,6 +94,7 @@
               <hr>
               <section id="utilidades"> 
                <h2>Utilidades</h2> 
+               <br>
                <ul> 
                 <li> Docentes 
                  <ul> 
@@ -126,5 +126,7 @@
                 <p>© Desenvolvido por Bruno Gehlen - 2023</p> 
               </footer> 
         </div>
+        <script src="assets/scripts/nav.js"></script>
+        <script src="assets/scripts/hidenav.js"></script>
     </body>
 </html>
