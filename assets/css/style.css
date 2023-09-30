@@ -5,7 +5,7 @@
     --primary-color: #303030;
     --primary-color-dark: #1a1a1a;    
     --text-color: white;
-    --nav-width: 60px;
+    --nav-width: 70px;
 }
 * {     /*select all elements*/
     margin: 0;
@@ -39,8 +39,8 @@ nav {
   margin-bottom: 20px;
 }
 .sidebar-top .logo {
-  position: relative;
-  width: 100%;
+  position: sticky;
+  width: 90%;
 }
 .sidebar-links ul {
   list-style-type: none;
