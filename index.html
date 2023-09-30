@@ -2,83 +2,79 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <meta charset="utf-8", content="width=device-width, initial-scale=1.0">
-      <title>Bruno Gehlen - Site Pessoal</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>B. Gehlen - Site</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-        rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+          rel="stylesheet"
       >
       <link rel="stylesheet" href="assets/style.css">
-      <link rel="icon" type="image/png" href="files/science.png">
-
-      <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-      </script>
-
+      <link rel="icon" type="image/png" href="assets/science.png">
+      <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
     </head>
-    <body class="collapsed">
-      <div class="wrapper">
+    <body>
         <nav>
             <div class="sidebar-top">
-              <a href="#" class="logo__wrapper">
-                <img src="file/science.png" alt="Logo" class="logo">
-                <img src="files/science.png" alt="Logo" class="logo-small">
-              </a>
+              <img
+                src="assets/science.png"
+                class="logo"
+                alt="Logo"
+              >
             </div>
             <div class="sidebar-links">
-                <ul>
-                  <li>
-                    <a href="#home" title="Inicio" class="tooltip">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-                        <path d="M10 12h4v4h-4z"></path>
-                      </svg>
-                      <span class="link hide">Início</span>
-                      <span class="tooltip__content">Início</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#sobre" title="Sobre" class="tooltip">
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
-                      </svg>
-                      <span class="link hide">Materiais</span>
-                      <span class="tooltip__content">Materiais</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#projetos" title="Projetos" class="tooltip">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M4 4h6v8h-6z"></path>
-                        <path d="M4 16h6v4h-6z"></path>
-                        <path d="M14 12h6v8h-6z"></path>
-                        <path d="M14 4h6v4h-6z"></path>
-                      </svg>
-                      <span class="link hide">Projetos</span>
-                      <span class="tooltip__content">Projetos</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <ul>
+                <li>
+                  <a href="#about" title="Sobre Mim">
+                    <div class="icon">
+                      <img src="assets/about-svgrepo-com.svg" title="Sobre Mim">
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#project" title="Projetos">
+                    <div class="icon">
+                        <img src="assets/project-svgrepo-com.svg" title="Projetos">
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" title="Contato">
+                    <div class="icon">
+                        <img src="assets/contact-details-svgrepo-com.svg" title="Contato">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
+          <script src="scripts/script.js"></script>
           <div class="content">
             <h1 align="center">Seja bem-vindo(a)!🍃</h1>
             <br>
 
             <section id="home">
                <p>Este é o meu site pessoal e aqui você pode encontrar informações sobre mim e meus projetos.</p>
+               <p> $$ (\square + m^2)\phi=0 $$ </p>
               </section>
               
               <br>
               <hr>
-              <section id="sobre"> 
+              <section id="about"> 
                <h2>Sobre mim</h2> 
                <p> Estou no 6° semestre do Bacharelado em Física da Universidade de São Paulo, e atualmente explorando a área da Física de Partículas.</p> 
                <p> Meu CV Lattes pode ser visualizado <a href="http://lattes.cnpq.br/2794653740713400">aqui</a>.</p>
@@ -86,7 +82,7 @@
               
               <br>
               <hr>
-              <section id="projetos"> 
+              <section id="project"> 
                <h2>Projetos</h2> 
                <ul> 
                 <li>(W.I.P) <a href="em breve">T.d.C.</a></li> 
@@ -114,19 +110,20 @@
               <br>
               <hr>
               <br>
-              <!--<section id="contato"> 
-               <h2>Contato</h2> -->
+              <section id="contact"> 
+               <!--<h2>Contato</h2> -->
                <p>Meus meios de contato são:</p> 
                <ul> 
                 <li>Email: <a href="mailto: brunogfdsilva@usp.br">brunogfdsilva@usp.br</a> </li> 
                 <li>Github: github.com/Bruno-Gehlen</li> 
                </ul> 
               <!--</section>-->
-
+              
+              <br>
+              <br>
               <footer> 
                 <p>© Desenvolvido por Bruno Gehlen - 2023</p> 
               </footer> 
         </div>
-        </div>  
     </body>
 </html>
