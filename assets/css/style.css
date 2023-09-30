@@ -5,25 +5,13 @@
     --primary-color: #303030;
     --primary-color-dark: #1a1a1a;    
     --text-color: white;
-    --nav-width: 80px;
+    --nav-width: 60px;
 }
 * {     /*select all elements*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Mulish;
-}
-.background {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    opacity: 0.5;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 /*##########  SIDEBAR  ##########*/
@@ -44,48 +32,40 @@ nav {
 .hidden-nav {
   display: none;
 }
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
 .sidebar-top {
-  position: relative;
+  position: sticky;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 .sidebar-top .logo {
   position: relative;
-  width: 40px;
-  
-  left: 4px;
+  width: 100%;
 }
 .sidebar-links ul {
   list-style-type: none;
   position: relative;
-  text-align: justify;
+  align-items: center;
   list-style-position: inside;
   padding-left: 0px;
 }
-.sidebar-links li {
-  position: relative;
-}
 .sidebar-links li a {
-  padding: 13px;
+  padding: 0px;
   color: var(--text-color);
+  width: 100%;
   font-size: 1.25rem;
   display: flex;
   align-items: center;
-  height: 56px;
+  height: 55px;
   text-decoration: none;
   color: #fff;
+  justify-content: center;
 }
 .sidebar-links .active {
   width: 100%;
   text-decoration: none;
   background-color: var(--primary-color-dark);
-  transition: all 100ms ease-in;
+  transition: all 350ms ease-in;
   border-radius: 10px;
 }
 .icon {
@@ -98,21 +78,19 @@ main {
 body {
   background-color: #1b1b1b;
 }
-
-.content {
-  display: inline-block;
-  vertical-align: top; 
-  width: calc(100% - 117px);
-  padding: 0cm 20px 0cm 20px;
+.hidden-div {
+  width: calc(100% - 0.8var(--nav-width));
+  padding: 0cm 0px 0cm 0px;
   box-sizing: border-box; 
   margin-left: 1em; 
   margin-right: 1em;
   color: var(--text-color);
 }
-
-.hidden-div {
-  width: calc(100% - 0.8var(--nav-width));
-  padding: 0cm 0px 0cm 0px;
+.content {
+  display: inline-block;
+  vertical-align: top; 
+  width: calc(100% - 117px);
+  padding: 0cm 3rem 0cm 3rem;
   box-sizing: border-box; 
   margin-left: 1em; 
   margin-right: 1em;
@@ -126,17 +104,17 @@ ul {
   list-style-position: inside;
   padding-left: 13px;
 }
-
 p {
   text-align: justify;
   text-indent: 1.5em;
 }
-
 header, section, footer, h1, h2 {
   text-align: center;
   
 }
-
 a, a:hover, a:active, a:visited {
   color: #5eacfd/*#aa90e0*/;
+}
+.plushr {
+  margin-top: 40px;
 }
