@@ -109,7 +109,7 @@ body {
 .content {
   display: inline-block;
   vertical-align: top; /* Align elements at the top */
-  width: 90%; /* You can adjust the width as needed */
+  width: 70%; /* You can adjust the width as needed */
   box-sizing: border-box; /* Ensure padding and border are included in width */
   margin-left: 20px; /* Adjust the value as needed for the desired space */
   margin-right: 20px;
