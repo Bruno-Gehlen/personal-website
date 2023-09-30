@@ -1,3 +1,3 @@
 # Site pessoal
 
-Nunca vai ficar pronto e tô sempore mudando.
+Nunca vai ficar pronto e tô sempre mudando.
