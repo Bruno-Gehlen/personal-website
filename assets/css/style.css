@@ -28,6 +28,7 @@ nav {
     display: inline-block;
     flex-direction: column;
 }
+
 .hidden-nav {
   position: sticky;
   top: 0;
@@ -83,12 +84,13 @@ nav {
   align-items: normal;
   width: 40px;
   height: 40px;
-  margin-right: 40px;
+  margin-right: 30px;
+  margin-left: 10px;
   vertical-align: middle;
 }
 .left-div .logo {
   position: relative;
-  width: 100%;
+  width: 42px;
   vertical-align: middle;
 }
 .right-div {
@@ -96,27 +98,32 @@ nav {
     height: 40px;
 }
 .right-div ul {
+  display: inline-block;
   list-style: none;
   padding: 0;
-  margin: 0;
   height: 100%;
-
-  list-style-type: 12px;
-  position: relative;
-  align-items: stretch;
-  list-style-position: inside;
+  width: 400px;
+  list-style-type: none;
+  vertical-align: middle;
 }
-.right-div li {
+.right-div ul li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
   height: 100%;
-  padding: 5px 0px;
+  width: 45px;
+  vertical-align: middle;
 }
-.right-div a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.right-div li a {
   height: 100%;
+  padding: 0px;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  height: 100%; 
+  vertical-align: middle;
 }
 .right-div .active {
   width: 100%;
