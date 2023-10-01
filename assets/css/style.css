@@ -30,7 +30,15 @@ nav {
     transition: width 0.5s ease-in-out;
 }
 .hidden-nav {
-  display: none;
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 1rem 0.8rem;
+  color: var(--text-color);
+  display: inline-flex;
+  flex-direction: row;
 }
 .sidebar-top {
   position: sticky;
@@ -72,6 +80,52 @@ nav {
   display: flex;
   align-items: center;
 }
+.left-div {
+  align-items: normal;
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+.left-div .logo {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+}
+.right-div {
+    width: 100%;
+    height: 40px;
+}
+.right-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+
+  list-style-type: 12px;
+  position: relative;
+  align-items: stretch;
+  list-style-position: inside;
+}
+.right-div li {
+  display: inline-block;
+  margin-right: 30px;
+  height: 100%;
+  padding: 5px 0px;
+}
+.right-div a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+}
+.right-div .active {
+  width: 100%;
+  text-decoration: none;
+  background-color: var(--primary-color-dark);
+  transition: all 350ms ease-in;
+  border-radius: 10px;
+}
 
 /*#############    BODY   ###########*/
 
@@ -79,6 +133,8 @@ body {
   background-color: #1b1b1b;
 }
 .hidden-div {
+  display: inline-block;
+  vertical-align: top; 
   width: calc(100% - 0.8var(--nav-width));
   padding: 0cm 0px 0cm 0px;
   box-sizing: border-box; 
