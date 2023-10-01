@@ -32,7 +32,7 @@ nav {
 .hidden-nav {
   position: sticky;
   top: 0;
-  height: 8vh;
+  height: 75px;
   background-color: var(--primary-color);
   width: 100%;
   padding: 1rem 0.8rem;
