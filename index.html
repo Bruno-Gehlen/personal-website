@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
   <head>
     <meta charset="utf-8">
@@ -19,10 +19,13 @@
       rel="stylesheet">
     <link 
       rel="stylesheet" 
-      href="assets/css/style.css">
+      href="config/css/general.css">
     <link 
       rel="stylesheet" 
-      href="assets/css/sidebar.css">
+      href="config/css/sidebar.css">
+    <link 
+      rel="stylesheet" 
+      href="config/css/body.css">  
     <!--<link 
       rel="icon" 
       type="image/png" 
@@ -35,11 +38,11 @@
 
   </head>
 
-  <body>
-    <nav id="myNav">
+  <body id="MyBody">
+    <nav id="myNav" class="sidebar">
       <div class="sidebar-top" id="leftNav">
         <img
-          src="assets/visuals/atom.svg"
+          src="config/visuals/atom.svg"
           class="logo"
           alt="Logo"
         >
@@ -49,34 +52,32 @@
           <li>
             <a href="#about" title="Sobre Mim">
               <div class="icon">
-                <img src="assets/visuals/about-svgrepo-com.svg" title="Sobre Mim">
+                <img src="config/visuals/about.svg" title="Sobre Mim">
               </div>
             </a>
           </li>
           <li>
             <a href="#project" title="Projetos">
               <div class="icon">
-                <img src="assets/visuals/project-svgrepo-com.svg" title="Projetos">
+                <img src="config/visuals/dashboard.svg" title="Projetos">
               </div>
             </a>
           </li>
           <li>
             <a href="#contact" title="Contato">
               <div class="icon">
-                <img src="assets/visuals/contact-details-svgrepo-com.svg" title="Contato">
+                <img src="config/visuals/contact.svg" title="Contato">
               </div>
             </a>
           </li>
         </ul>
       </div>
     </nav>
+
     <div id="myDiv" class="content">
-      <br>
-
-      <main>
+    <br>
+      <main class="card">
         <h1>Seja bem-vindo(a)!</h1>
-
-        <br> 
 
         <section id="home">
             <p>Este é o meu site pessoal, onde deixo algumas informações sobre 
@@ -85,33 +86,25 @@
         </section>
       </main>
 
-      <hr class="plushr">
-
-      <section id="about"> 
+      <section id="about" class="card"> 
         <h2>-Sobre mim-</h2> 
-        <br>
+
         <p> Atualmente estou no 6° semestre do Bacharelado em Física da Universidade de São Paulo, e tenho explorando a área da Física de Partículas.</p> 
       </section> 
 
-      <hr class="plushr">
-
-      <section id="project"> 
+      <section id="project" class="card"> 
         <h2>-Projetos-</h2> 
-
-        <br>
 
         <ul> 
           <li>(W.I.P) <a href="em breve" target="_blank">---</a></li> 
           <li>... </li> 
+          <li>... </li> 
+          <li>... </li> 
         </ul> 
       </section>
 
-      <hr class="plushr">
-
-      <section id="utilidades"> 
+      <section id="utilidades" class="card"> 
         <h2>-Utilidades-</h2> 
-
-        <br>
 
         <ul> 
           <li> Sites de Docentes 
@@ -128,36 +121,25 @@
             </ul> 
       </section> 
 
-        <hr class="plushr">
+      <section id="contact" class="card"> 
+        <!--<h2>Contato</h2> -->
+        <p>Meus meios de contato são:</p> 
+        <ul>
+          <li>CV Lattes: <a href="http://lattes.cnpq.br/2794653740713400" target="_blank">aqui</a></li> 
+          <li>Email: <a href="mailto: brunogfdsilva@usp.br" target="_blank">brunogfdsilva@usp.br</a> </li> 
+          <li>Github: <a href="https://github.com/Bruno-Gehlen" target="_blank">github.com/Bruno-Gehlen</a></li> 
+        </ul> 
+      </section>
 
-        <br>
-
-        <section id="contact"> 
-          <!--<h2>Contato</h2> -->
-          <p>Meus meios de contato são:</p><br> 
-          <ul>
-            <li>CV Lattes: <a href="http://lattes.cnpq.br/2794653740713400" target="_blank">aqui</a></li> 
-            <li>Email: <a href="mailto: brunogfdsilva@usp.br" target="_blank">brunogfdsilva@usp.br</a> </li> 
-            <li>Github: <a href="https://github.com/Bruno-Gehlen" target="_blank">github.com/Bruno-Gehlen</a></li> 
-          </ul> 
-        </section>
-        
-      <br>
-
-      <p> $$ (i\gamma^\mu \partial_\mu - m)\psi=0 $$ </p>
-
-      <br>
-
-      <footer> 
+      <footer style="color: white;"> 
+        <p> $$ (i\gamma^\mu \partial_\mu - m)\psi=0 $$ </p>
         <p>Desenvolvido por Bruno Gehlen - 2023</p> 
       </footer> 
 
-      <br>
-
     </div>
 
-    <script src="assets/scripts/nav.js"></script>
-    <script src="assets/scripts/change2mobile.js"></script>
+    <script src="config/scripts/sidebarActive.js"></script>
+    <script src="config/scripts/changeMobile.js"></script>
 
   </body>
 </html>
