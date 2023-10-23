@@ -1,0 +1,44 @@
+
+body {
+  background-color: #1b1b1b;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.body-hidden{
+  color: white;
+}
+
+.card { 
+  color: white;
+  background-color: rgb(46, 46, 46);
+  margin: 0.6cm 0cm 0.6cm 0cm;
+  padding: 5px 0.5cm 0.2cm 0.5cm;
+  width: calc(100% - 5*var(--nav-width));
+  height: 6cm;
+  border-radius: 0.3cm;
+  box-shadow: 0.05cm 0.05cm 0.3cm 0.05cm #494949;
+}
+
+.hidden-card {
+  color: white;
+  background-color: rgb(46, 46, 46);
+  margin: 1cm 2cm 1cm 2cm;
+  padding: 5px 0.5cm 0.2cm 0.5cm;
+  width: calc(100%--nav-width);
+  height: 6cm;
+  border-radius: 0.3cm;
+  box-shadow: 0.05cm 0.05cm 0.3cm 0.05cm #494949;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.hidden-div {
+  margin-top: 1cm;
+}
