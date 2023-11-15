@@ -27,6 +27,8 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+  -webkit-filter:brightness(35%);
+  -moz-filter:brightness(35%);
 }
 
 @media (min-width: 1024px) {
