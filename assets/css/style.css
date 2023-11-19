@@ -305,6 +305,10 @@ h6 {
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
+  margin-right: auto;   
+  margin-left: auto; 
+  /* max-width: 300px;  */
+  width: 100%;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -317,9 +321,9 @@ h6 {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
+  right: 55px;
+  left: 55px;
   bottom: 45px;
-  left: 15px;
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
