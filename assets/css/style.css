@@ -354,8 +354,8 @@ section {
   top: 140px;
   bottom: 100%;
   opacity: 0;
-  /* transition: ease-in-out 0.4s; */
-  transition: transform 0.825s ease-in-out, filter 0.825s ease-in-out, opacity 0.825s ease-in-out;
+  transition: ease-in-out 0.3s;
+  /* transition: transform 0.825s ease-in-out, filter 0.825s ease-in-out, opacity 0.825s ease-in-out; */
   z-index: 2;
 }
 
