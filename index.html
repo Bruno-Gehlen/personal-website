@@ -5,13 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>B. Gehlen - Website</title>
+  <title>| B. Gehlen - Website</title>
   <meta content="" name="Bruno Gehlen personal website">
-  <meta content="" name="physics, website, bruno gehlen, bruno, gehlen">
+  <meta content="" name="physics, website, bruno gehlen">
 
   <!-- Favicons -->
   <link href="assets/img/icon.png" rel="icon">
   <link href="assets/img/icon.png" rel="apple-touch-icon">
+
+  <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -21,10 +26,9 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script type="text/x-mathjax-config">
@@ -37,7 +41,6 @@
   <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js"></script>
 
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
@@ -58,7 +61,7 @@
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
       <div class="social-links">
         <!-- <a href="#" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a> -->
@@ -71,7 +74,6 @@
       
     </div>
   </header>
-  <!-- End Header -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -85,7 +87,11 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
+        <div class="col-lg-4" data-aos="fade-right" style=
+        "display: flex;
+        justify-content: center;
+        
+        ">
           <img src="assets/img/identicon.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
@@ -110,36 +116,18 @@
 
 
     <!-- ======= Skills  ======= -->
-    <div class="skills container" style="border-radius: 0px 0px 21px 21px;">
+    <div class="skills container" style="border-radius: 0px 0px 0px 0px;">
 
-      <div class="section-title">
+      <div class="section-title" >
         <h2>Skills</h2>
       </div>
 
       <div class="row skills-content">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="width: 33.3%;">
 
           <div class="progress">
-            <span class="skill">HTML/CSS/JavaScript </span><!--<i class="val">30%</i>-->
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Python </span><!--<i class="val">90%</i>-->
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">LaTeX </span><!--<i class="val">80%</i>-->
+            <span class="skill">HTML</span><!--<i class="val">30%</i>-->
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -154,13 +142,49 @@
 
         </div>
 
+        <div class="col-lg-6" style="width: 33.3%;">
+
+          <div class="progress">
+            <span class="skill">CSS </span><!--<i class="val">80%</i>-->
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">LaTeX </span><!--<i class="val">90%</i>-->
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6" style="width: 33.3%;">
+
+          <div class="progress">
+            <span class="skill">JavaScript </span><!--<i class="val">30%</i>-->
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Python </span><!--<i class="val">90%</i>-->
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
     <!-- End Skills -->
 
     <!-- ======= Interests ======= -->
-    <!-- <div class="interests container">
+    <div class="interests container" style="border-radius: 0px 0px 21px 21px;">
 
       <div class="section-title">
         <h2>Interests</h2>
@@ -168,32 +192,32 @@
 
       <div class="row">
         <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>--</h3>
+          <div class="icon-box" style="border-radius: 11px;">
+            <i class="ri-shadow-line" style="color: #329933;"></i>
+            <h3>UI Design</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>--</h3>
+          <div class="icon-box" style="border-radius: 11px;">
+            <i class="ri-code-s-slash-line" style="color: #66CC66;"></i>
+            <h3>Programming</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>--</h3>
+          <div class="icon-box" style="border-radius: 11px;">
+            <i class="ri-hard-drive-3-line" style="color: #59c288;"></i>
+            <h3>Technology</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>--</h3>
+          <div class="icon-box" style="border-radius: 11px;">
+            <i class="ri-brain-line" style="color: #B2E5B2;"></i>
+            <h3>Philosophy</h3>
           </div>
         </div>
       </div>
       
-    </div> -->
+    </div> 
     <!-- End Interests -->
 
   </section>
@@ -224,12 +248,6 @@
           </div> -->
 
           <h3 class="resume-title">Education</h3>
-          <!-- <div class="resume-item">
-            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-            <h5>2015 - 2016</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div> -->
           <div class="resume-item">
             <h4>Bachelor of Science &amp; in Physics</h4>
             <h5>2021 - Present</h5>
@@ -294,7 +312,7 @@
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-docs">Docs</li>
-            <!-- <li data-filter=".filter-card">Card</li> -->
+            <li data-filter=".filter-web">Web</li>
             <!-- <li data-filter=".filter-web">Web</li> -->
           </ul>
         </div>

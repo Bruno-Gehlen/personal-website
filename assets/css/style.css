@@ -27,8 +27,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-  filter:brightness(55%);
-  /* -moz-filter:brightness(35%); */
+  filter: brightness(75%) ;
 }
 
 @media (min-width: 1024px) {
@@ -367,7 +366,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.600);
+  background: rgba(0, 0, 0, 0.500);
   padding: 30px;
   border-radius: 21px;
 }
@@ -939,7 +938,12 @@ section .container {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.137);
-  border-radius: 17px;
+  border-radius: 14px;
+  transition: ease-in-out 0.4s;
+}
+
+.contact .info-box:hover {
+  background: rgba(255, 255, 255, 0.237);
 }
 
 .contact .info-box i.bx {

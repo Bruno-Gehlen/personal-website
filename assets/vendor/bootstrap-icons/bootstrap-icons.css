@@ -2077,3 +2077,4 @@ url("./fonts/bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("wof
 .bi-suitcase2-fill::before { content: "\f901"; }
 .bi-suitcase2::before { content: "\f902"; }
 .bi-vignette::before { content: "\f903"; }
+.bi-programming::before { content: "\f2c6"; }
