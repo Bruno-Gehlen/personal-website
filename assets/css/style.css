@@ -27,7 +27,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-  filter:brightness(45%);
+  filter:brightness(55%);
   /* -moz-filter:brightness(35%); */
 }
 
@@ -367,9 +367,12 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.600);
   padding: 30px;
+  border-radius: 21px;
 }
+
+
 
 @media (max-width: 768px) {
   section {
@@ -772,6 +775,7 @@ section .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 17px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -931,10 +935,11 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: #353535;
   padding: 20px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.137);
+  border-radius: 17px;
 }
 
 .contact .info-box i.bx {
