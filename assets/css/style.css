@@ -318,15 +318,24 @@ h6 {
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 0 auto;
+  width: 220px;
+  height: auto;
 }
 
 .navbar-mobile li {
   padding: 12px 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
 }
 
 .navbar-mobile li+li {
-  margin: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
 }
 
 .navbar-mobile a,
