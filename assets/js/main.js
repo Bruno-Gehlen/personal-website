@@ -43,8 +43,8 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('ri-menu-fold-line')
-    this.classList.toggle('ri-close-line')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
   })
 
   /**
