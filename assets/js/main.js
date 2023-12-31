@@ -69,8 +69,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('ri-menu-fold-line')
+        navbarToggle.classList.toggle('ri-close-line')
       }
 
       if (this.hash == '#header') {
