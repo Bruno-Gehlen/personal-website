@@ -1,6 +1,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* @font-face {
+  font-family: "MyHelvetica";
+  src: url('./algo/MgOpenModernaBold.ttf') format('woff2');
+  font-weight: bold;
+  
+} */
+
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
