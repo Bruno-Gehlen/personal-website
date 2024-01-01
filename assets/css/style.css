@@ -27,7 +27,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-  filter: brightness(75%) ;
+  filter: brightness(55%) ;
 }
 
 @media (min-width: 1024px) {
@@ -374,8 +374,8 @@ section {
   top: 140px;
   bottom: 100%;
   opacity: 0;
-  transition: ease-in-out 0.3s;
-  /* transition: transform 0.825s ease-in-out, filter 0.825s ease-in-out, opacity 0.825s ease-in-out; */
+  /* transition: ease-in-out 0.3s; */
+  transition: transform 0.825s ease-in-out, filter 0.825s ease-in-out, opacity 0.825s ease-in-out;
   z-index: 2;
 }
 
@@ -387,7 +387,8 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.500);
+  /* background: rgba(0, 0, 0, 0.500); */
+  background: linear-gradient(165deg, rgba(0, 0, 0, 0.61) 50.33%, rgba(49, 49, 49, 0.41) 78.9%);
   padding: 30px;
   border-radius: 21px;
 }
