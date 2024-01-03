@@ -15,6 +15,7 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  --padtop: 10px;
 }
 
 body::before {
