@@ -404,6 +404,7 @@ section .container {
   /* background: linear-gradient(165deg, rgba(0, 0, 0, 0.61) 50.33%, rgba(49, 49, 49, 0.41) 78.9%); */
   padding: 30px;
   border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
   border-width: 1.5px;
   border-radius: 21px;
 }
