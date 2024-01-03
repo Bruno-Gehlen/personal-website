@@ -20,14 +20,27 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/background.jpg") top right no-repeat;
+  background: #040404 top right no-repeat;
+  background-image: url("../img/background.jpg");
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
-  filter: brightness(55%) ;
+  /* filter: brightness(55%); */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.733) 80%);
 }
 
 @media (min-width: 1024px) {
@@ -387,9 +400,11 @@ section.section-show {
 }
 
 section .container {
-  /* background: rgba(0, 0, 0, 0.500); */
-  background: linear-gradient(165deg, rgba(0, 0, 0, 0.61) 50.33%, rgba(49, 49, 49, 0.41) 78.9%);
+  background: rgba(0, 0, 0, 0.610);
+  /* background: linear-gradient(165deg, rgba(0, 0, 0, 0.61) 50.33%, rgba(49, 49, 49, 0.41) 78.9%); */
   padding: 30px;
+  border-style: solid;
+  border-width: 1.5px;
   border-radius: 21px;
 }
 
