@@ -1006,3 +1006,40 @@ section .container {
   opacity: 1;
   transition: opacity 0.7s ease-out;
 }
+
+.construction-warning {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 5px;
+  border-radius: 6px;
+  font-size: 10px;
+  z-index: 9999;
+  width: 50px;
+  max-height: 50px; /* Altura inicial (quando contraído) */
+  overflow: hidden; /* Esconde o conteúdo extra quando contraído */
+  transition: max-height 0.3s ease; /* Suaviza a transição */
+  cursor: pointer; /* Indica que é interativo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction-warning.expanded {
+  max-height: 200px; /* Altura quando expandido */
+  width: 210px;
+}
+
+#warning-text {
+  margin: 0;
+  font-size: 20px; /* Aumenta o tamanho do ícone */
+  filter: grayscale(70%);
+}
+
+#expanded-text {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}

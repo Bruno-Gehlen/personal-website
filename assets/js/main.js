@@ -261,3 +261,24 @@ function toggleSpeechBalloonSize() {
 
 // Attach the toggle function to the click event of the speech balloon
 speechBalloon.addEventListener('click', toggleSpeechBalloonSize);
+
+// EXPANDE O BOTÃO DE AVISO DA VERSÃO EM INGLÊS
+// Seleciona o aviso e os elementos de texto
+const warning = document.getElementById("warning");
+const warningText = document.getElementById("warning-text");
+const expandedText = document.getElementById("expanded-text");
+
+// Adiciona o evento de clique no aviso
+warning.addEventListener("click", function() {
+  // Alterna a classe "expanded" para expandir ou contrair
+  warning.classList.toggle("expanded");
+
+  // Alterna a visibilidade do ícone e do texto expandido
+  if (warning.classList.contains("expanded")) {
+    warningText.style.display = "none"; // Oculta o ícone
+    expandedText.style.display = "block"; // Exibe o texto expandido
+  } else {
+    warningText.style.display = "block"; // Exibe o ícone
+    expandedText.style.display = "none"; // Oculta o texto expandido
+  }
+});
