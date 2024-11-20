@@ -90,7 +90,7 @@
   <section id="about" class="about">
     <div class="container">
 
-    <!-- ======= About Me ======= -->
+    <!-- ------- About Me ------- -->
     <div class="about-me" style="padding-bottom: 30px;">
 
       <div class="section-title">
@@ -106,7 +106,7 @@
           <img src="assets/img/memyself.jpg" class="img-fluid" alt="Myself" style="border-radius: 10%; width: 250px; height: 250px;">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>High-Energy &amp; Particle Physics</h3>
+          <h3>Particle &amp; Mathematical Physics</h3>
           <p class="fst-italic" >
             Currently, I am delving into the theoretical formalism of the particle physics, specifically Quantum Field Theory, in an effort to understand the composition of the universe and everything within it, having a strong interest in exploring the intricacies of the Standard Model and delving into theories that go beyond it. My main interests currently are differential geometry and the possible applications of its formalism in physics.
           </p>
@@ -130,7 +130,7 @@
 
     </div>
 
-    <!-- ======= Skills  ======= -->
+    <!-- ------- Skills  ------- -->
     <div class="skills" style="padding-bottom: 30px;">
 
       <div class="section-title" >
@@ -197,7 +197,7 @@
 
     </div>
     
-    <!-- ======= Interests ======= -->
+    <!-- ------- Interests ------- -->
     <div class="interests">
 
       <div class="section-title">
@@ -237,6 +237,8 @@
   </section>
   <!-- End About Section -->
 
+  <!-- OOOOOOOOOOOOOOOOOOOOOOOOO -->
+
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container">
@@ -271,6 +273,8 @@
     </div>
   </section>
   <!-- End Resume Section -->
+
+  <!-- OOOOOOOOOOOOOOOOOOOOOOOOO -->
 
   <!-- ======= Projects Section ======= -->
   <section id="projects" class="portfolio">
@@ -368,6 +372,8 @@
   </section>
   <!-- End Portfolio Section -->
 
+  <!-- OOOOOOOOOOOOOOOOOOOOOOOOO -->
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
@@ -414,78 +420,19 @@
     </div>
   </section>
   <!-- End Contact Section -->
+
+  <!-- OOOOOOOOOOOOOOOOOOOOOOOOO -->
   
-  <!-- JS Files -->
-    <!-- (Vendor) -->
+            <!-- JS Files -->
+      <!-- (Vendor) -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-    <!-- (Particles) -->
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/app.js"></script>
-    <!-- (Main) -->
   <script src="assets/js/main.js"></script>
-  <script>
-    function initMap() {
-        // Coordenadas do IFUSP
-        const ifuspCoords = { lat: -23.56019329178041, lng: -46.737827 }; 
-
-        // Estilo noturno do mapa
-        const nightModeStyle = [
-            { elementType: "geometry", stylers: [{ color: "#212121" }] },
-            { elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-            { elementType: "labels.text.stroke", stylers: [{ color: "#212121" }] },
-            { featureType: "administrative", elementType: "geometry", stylers: [{ color: "#757575" }] },
-            { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#181818" }] },
-            { featureType: "road", elementType: "geometry.fill", stylers: [{ color: "#2c2c2c" }] },
-            { featureType: "water", elementType: "geometry", stylers: [{ color: "#000000" }] },
-            { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] }
-        ];
-
-        // Inicialização do mapa
-        const map = new google.maps.Map(document.getElementById("map"), {
-            center: ifuspCoords,
-            zoom: 17,
-            styles: nightModeStyle,
-        });
-
-        // Adicionar marcador no IFUSP
-        const marker = new google.maps.Marker({
-            position: ifuspCoords,
-            map: map,
-            title: "Instituto de Física da USP",
-        });
-
-        // Criar a InfoWindow 
-        const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="max-width: 1500px; color: #000; text-align: left; overflow: hidden;">
-                        <img src="https://portal.if.usp.br/imprensa/sites/portal.if.usp.br.ifusp/files/styles/media_gallery_large/public/DSC_0001a-22a.jpg?itok=97bVPIIU" 
-                            //  alt="Instituto de Física da USP" 
-                             style="width: 100%; height: 95px; object-fit: cover; object-position: 0% 26%; border-radius: 5px; margin-bottom: 10px;">
-                        <h3 style="font-size: 18px; margin: 0;">Instituto de Física da USP</h3>
-                        <p style="margin: 5px 0; font-size: 14px;">
-                            <strong>Endereço:</strong> R. do Matão, 1371 - Cidade Universitária, São Paulo - SP, 05508-090
-                        </p>
-                        <a href="https://www.google.com/maps?q=Instituto+de+F%C3%ADsica+da+USP" 
-                           target="_blank" 
-                           style="color: #4caf50; text-decoration: none;">
-                            Ver no Google Maps
-                        </a>
-                    </div>
-                `,
-            });
-
-        // Exibir InfoWindow ao clicar no marcador
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-    }
-</script>
+  <script src="assets/js/mapsDark.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWJSNOHmCocnA7Mx3mncr9uYEkv9843VQ&callback=initMap" async defer></script>
   
 </div>
