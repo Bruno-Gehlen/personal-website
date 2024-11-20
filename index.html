@@ -431,39 +431,61 @@
   <script src="assets/js/main.js"></script>
   <script>
     function initMap() {
-      // Estilo noturno para o mapa
-      const nightModeStyle = [
-        { elementType: "geometry", stylers: [{ color: "#212121" }] },
-        { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#212121" }] },
-        { featureType: "administrative", elementType: "geometry", stylers: [{ color: "#757575" }] },
-        { featureType: "administrative.country", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] },
-        { featureType: "administrative.land_parcel", stylers: [{ visibility: "off" }] },
-        { featureType: "administrative.locality", elementType: "labels.text.fill", stylers: [{ color: "#bdbdbd" }] },
-        { featureType: "poi", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-        { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#181818" }] },
-        { featureType: "poi.park", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
-        { featureType: "poi.park", elementType: "labels.text.stroke", stylers: [{ color: "#1b1b1b" }] },
-        { featureType: "road", elementType: "geometry.fill", stylers: [{ color: "#2c2c2c" }] },
-        { featureType: "road", elementType: "labels.text.fill", stylers: [{ color: "#8a8a8a" }] },
-        { featureType: "road.arterial", elementType: "geometry", stylers: [{ color: "#373737" }] },
-        { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#3c3c3c" }] },
-        { featureType: "road.highway.controlled_access", elementType: "geometry", stylers: [{ color: "#4e4e4e" }] },
-        { featureType: "road.local", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] },
-        { featureType: "transit", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
-        { featureType: "water", elementType: "geometry", stylers: [{ color: "#000000" }] },
-        { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] },
-      ];
-  
-      // Inicializar o mapa
-      const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -23.559998, lng: -46.737827 }, // Coordenadas do IFUSP
-        zoom: 15,
-        styles: nightModeStyle,
-      });
+        // Coordenadas do IFUSP
+        const ifuspCoords = { lat: -23.56019329178041, lng: -46.737827 }; 
+
+        // Estilo noturno do mapa
+        const nightModeStyle = [
+            { elementType: "geometry", stylers: [{ color: "#212121" }] },
+            { elementType: "labels.text.fill", stylers: [{ color: "#757575" }] },
+            { elementType: "labels.text.stroke", stylers: [{ color: "#212121" }] },
+            { featureType: "administrative", elementType: "geometry", stylers: [{ color: "#757575" }] },
+            { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#181818" }] },
+            { featureType: "road", elementType: "geometry.fill", stylers: [{ color: "#2c2c2c" }] },
+            { featureType: "water", elementType: "geometry", stylers: [{ color: "#000000" }] },
+            { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] }
+        ];
+
+        // Inicialização do mapa
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: ifuspCoords,
+            zoom: 17,
+            styles: nightModeStyle,
+        });
+
+        // Adicionar marcador no IFUSP
+        const marker = new google.maps.Marker({
+            position: ifuspCoords,
+            map: map,
+            title: "Instituto de Física da USP",
+        });
+
+        // Criar a InfoWindow 
+        const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="max-width: 1500px; color: #000; text-align: left; overflow: hidden;">
+                        <img src="https://portal.if.usp.br/imprensa/sites/portal.if.usp.br.ifusp/files/styles/media_gallery_large/public/DSC_0001a-22a.jpg?itok=97bVPIIU" 
+                            //  alt="Instituto de Física da USP" 
+                             style="width: 100%; height: 95px; object-fit: cover; object-position: 0% 26%; border-radius: 5px; margin-bottom: 10px;">
+                        <h3 style="font-size: 18px; margin: 0;">Instituto de Física da USP</h3>
+                        <p style="margin: 5px 0; font-size: 14px;">
+                            <strong>Endereço:</strong> R. do Matão, 1371 - Cidade Universitária, São Paulo - SP, 05508-090
+                        </p>
+                        <a href="https://www.google.com/maps?q=Instituto+de+F%C3%ADsica+da+USP" 
+                           target="_blank" 
+                           style="color: #4caf50; text-decoration: none;">
+                            Ver no Google Maps
+                        </a>
+                    </div>
+                `,
+            });
+
+        // Exibir InfoWindow ao clicar no marcador
+        marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+        });
     }
-  </script>  
+</script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWJSNOHmCocnA7Mx3mncr9uYEkv9843VQ&callback=initMap" async defer></script>
   
 </div>
