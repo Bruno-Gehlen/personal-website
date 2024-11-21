@@ -1,6 +1,6 @@
 function initMap() {
     // Coordenadas do IFUSP
-    const ifuspCoords = { lat: -23.56019329178041, lng: -46.737827 }; 
+    const ifuspCoords = { lat: -23.560114828231292, lng: -46.734681230749025 }; 
 
     // Estilo noturno do mapa
     const nightModeStyle = [
