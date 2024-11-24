@@ -48,8 +48,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
-  color: #000000;
+  /* background-color: #040404; */
+  color: #ffffff;
   position: relative;
   background: transparent;
   --padtop: 10px;
