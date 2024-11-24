@@ -21,6 +21,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/popup.css" rel="stylesheet">
 
   <!-- MathJax -->
   <script type="text/x-mathjax-config">
@@ -67,7 +68,7 @@
     </div>
   </header>
 
-  <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+  <!-- ================================================== -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -189,25 +190,39 @@
 
       <div class="row">
         <div class="col-lg-3 col-md-4">
-          <div class="icon-box" style="border-radius: 11px;">
+          <div class="icon-box trigger" style="border-radius: 11px;" id="trigger">
             <i class="ri-shadow-line" style="color: #329933;"></i>
             <h3>UI Design</h3>
           </div>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close" class="close">&times;</span> <!-- Botão de fechar -->
+                <h2>UI Design</h2>
+                <p>Design de interface é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência dos usuários e interação. Também conhecido como <a target="_blank" href="https://pt.wikipedia.org/wiki/Design_de_interface">UI (User Interface) design</a>, é uma disciplina que se concentra na criação de interfaces gráficas interativas para sistemas digitais.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" style="border-radius: 11px;">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box trigger" style="border-radius: 11px;" id="trigger">
             <i class="ri-code-s-slash-line" style="color: #66CC66;"></i>
             <h3>Programming</h3>
           </div>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close" class="close">&times;</span> <!-- Botão de fechar -->
+                <h2>UI Design</h2>
+                <p>Design de interface é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência dos usuários e interação. Também conhecido como <a target="_blank" href="https://pt.wikipedia.org/wiki/Design_de_interface">UI (User Interface) design</a>, é uma disciplina que se concentra na criação de interfaces gráficas interativas para sistemas digitais.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" style="border-radius: 11px;">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box" style="border-radius: 11px;" id="trigger">
             <i class="ri-hard-drive-3-line" style="color: #59c288;"></i>
             <h3>Technology</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" style="border-radius: 11px;">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box" style="border-radius: 11px;" id="trigger">
             <i class="ri-brain-line" style="color: #B2E5B2;"></i>
             <h3>Philosophy</h3>
           </div>
@@ -220,7 +235,7 @@
   </section>
   <!-- End About Section -->
 
-  <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+  <!-- ================================================== -->
 
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
@@ -259,7 +274,7 @@
   </section>
   <!-- End Resume Section -->
 
-  <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+  <!-- ================================================== -->
 
   <!-- ======= Projects Section ======= -->
   <section id="projects" class="portfolio">
@@ -357,7 +372,7 @@
   </section>
   <!-- End Portfolio Section -->
 
-  <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+  <!-- ================================================== -->
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
@@ -406,7 +421,7 @@
   </section>
   <!-- End Contact Section -->
 
-  <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+  <!-- ================================================== -->
 
   <!-- Botão de aviso para o Portugues -->
   <div class="construction-warning" id="warning">
@@ -424,6 +439,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/mapsDark.js"></script>
+  <script src="assets/js/popupAbout.js"></script>
 
 </div>
 </body>
