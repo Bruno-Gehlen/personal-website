@@ -1,4 +1,4 @@
-fetch('contributions.json')
+fetch('./assets/files/contributions.json')
   .then((response) => response.json())
   .then((data) => {
     const weeks = data.data.user.contributionsCollection.contributionCalendar.weeks;
