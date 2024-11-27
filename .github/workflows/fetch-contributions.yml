@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch Contributions Data
         env:
-          GITHUB_PAT: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
         run: |
           curl -X POST -H "Authorization: bearer $TOKEN" \
           -H "Content-Type: application/json" \
