@@ -1095,3 +1095,15 @@ section .container {
   margin: 0;
   text-align: center;
 }
+
+#graph {
+  display: grid;
+  grid-template-columns: repeat(7, 12px); /* 7 columns for days of the week */
+  gap: 2px;
+}
+
+.day {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ddd; /* Optional border */
+}
