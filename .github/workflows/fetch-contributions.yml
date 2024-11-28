@@ -3,7 +3,7 @@ name: Fetch GitHub Contributions
 on:
   workflow_dispatch: # Manually triggered, or change to schedule for periodic runs
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC (optional)
+    - cron: "* * * * 0" # Runs daily at midnight UTC (optional)
 
 jobs:
   fetch-contributions:
