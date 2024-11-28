@@ -398,7 +398,7 @@ h6 {
   text-align: center;
   margin: 0 auto;
   width: 220px;
-  height: 320px;
+  height: 335px;
 }
 
 .navbar-mobile li {
@@ -1149,7 +1149,7 @@ section .container {
 }
 
 .weekday-label {
-  font-size: 14px;
+  font-size: 11px;
   margin-bottom: 1px;
   font-weight: bold;
 }
