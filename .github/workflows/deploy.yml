@@ -13,9 +13,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Inject Google API Key
+    - name: Inject Google API Key into config.js
       run: |
-        sed -i 's|GOOGLE_API_KEY|'"${{ secrets.GOOGLE_API_KEY }}"'|g' index.html
+        sed -i 's|GOOGLE_API_KEY_PLACEHOLDER|'"${{ secrets.GOOGLE_API_KEY }}"'|g' assets/js/config.js
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
