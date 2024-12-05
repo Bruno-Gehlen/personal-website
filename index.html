@@ -506,6 +506,30 @@
   </script>
   <script id="MathJax-script" async src="assets/js/mathjax/tex-chtml.js"></script>
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCLeds9lIzBptMsyRfZXRMU-MhbC1gaTG8",
+      authDomain: "gehlen-personal-website.firebaseapp.com",
+      projectId: "gehlen-personal-website",
+      storageBucket: "gehlen-personal-website.firebasestorage.app",
+      messagingSenderId: "150015580290",
+      appId: "1:150015580290:web:97fd8ab882040307babc9b",
+      measurementId: "G-R7ZZ17QHP4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
 </div>
 </body>
 </html>
