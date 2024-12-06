@@ -9,8 +9,8 @@ Welcome to my personal website! 🎉 It's a showcase of my projects, skills, and
 - Contact
 
 ## Technologies Used
-- HTML, CSS, JavaScript
-- Hosted on Github Pages
+- HTML, CSS, JavaScript (learning React)
+- Hosted on Github Pages, deployed by AWS
 
 ## Live Preview
 Check it out here: bruno-gehlen.github.io
