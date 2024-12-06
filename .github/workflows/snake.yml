@@ -35,7 +35,7 @@ jobs:
 
       # Step 3: Move the SVG to the root directory (or preferred location)
       - name: Move SVG to root directory
-        run: mv dist/github-snake-dark.svg github-snake-dark.svg
+        run: mv dist/github-snake-dark.svg assets/files/github-snake-dark.svg
 
       # Step 4: Commit and push the changes
       - name: Commit and push changes
