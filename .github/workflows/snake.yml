@@ -1,19 +1,17 @@
-name: generate contribution snake
+name: generate-contribution-snake
 
 on:
-  # run automatically every 24 hours
+  # run automatically every Sunday at midnight
   schedule:
     - cron: "0 0 * * 0" 
   
-  # allows to manually run the job at any time
+  # allows manually running the job
   workflow_dispatch:
   
-  # run on every push on the master branch
+  # run on every push to the main branch
   push:
     branches:
-    - master
-    
-  
+      - main
 
 jobs:
   generate:
@@ -21,23 +19,31 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Generate the SVG
+      - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#7658a3
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+
+      # Step 3: Move the SVG to the root directory (or preferred location)
+      - name: Move SVG to root directory
+        run: mv dist/github-snake-dark.svg github-snake-dark.svg
+
+      # Step 4: Commit and push the changes
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-snake-dark.svg
+          git commit -m "Update contribution snake SVG [skip ci]" || echo "No changes to commit"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
