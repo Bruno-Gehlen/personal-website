@@ -11,9 +11,9 @@
     overflow-y: auto;
   }
   
-  #header * {
-    transition: ease-in-out 0.4s;
-  }
+  /* #header * {
+    /* transition: ease-in-out 0.4s; */
+  } */
   
   #header h1 {
     font-size: 48px;

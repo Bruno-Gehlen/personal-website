@@ -7,7 +7,7 @@
 .navbar {
     padding: 0;
     margin-top: 35px;
-    transition: ease-in-out 0.4s;
+    transition: linear 0.1s;
   }
   
   .navbar ul {

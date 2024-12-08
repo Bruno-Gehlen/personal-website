@@ -180,7 +180,7 @@ section {
   }
   
   .skills .progress-bar {
-    width: 1px;
+    /* width: 1px; */
     height: 10px;
     transition: 0.9s;
     background-color: #18d26e;
