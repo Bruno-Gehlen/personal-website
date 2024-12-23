@@ -12,7 +12,8 @@ export default defineConfig({
     // Otimiza o bundle final
     minify: 'terser',
     
-    // Configurações de output
+    // Configurações de input e output
+    publicDir: 'public',
     outDir: 'dist',
     assetsDir: 'assets',
     
