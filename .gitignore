@@ -1,5 +1,7 @@
-# Dependências
+# Dependências e deploy
 node_modules/
+public/
+src/
 
 # Arquivos de log
 npm-debug.log*
