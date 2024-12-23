@@ -246,6 +246,22 @@
 })()
 
 
+// ====== SPEECH BALLOON ==============//
+// Select the speech balloon element
+const speechBalloon = document.querySelector('a.speech-balloon');
+
+// Function to toggle the size of the speech balloon
+function toggleSpeechBalloonSize() {
+  speechBalloon.classList.toggle('extended');
+
+  const content = speechBalloon.querySelector('.speech-balloon-content');
+  // content.style.opacity = speechBalloon.classList.contains('extended') ? 1 : 0;
+  content.classList.toggle('extended');
+}
+
+// Attach the toggle function to the click event of the speech balloon
+speechBalloon.addEventListener('click', toggleSpeechBalloonSize);
+
 // EXPANDE O BOTÃO DE AVISO DA VERSÃO EM INGLÊS
 // Seleciona o aviso e os elementos de texto
 const warning = document.getElementById("warning");
