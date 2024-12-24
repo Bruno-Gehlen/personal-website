@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  optimizeDeps: {
+    include: ['typed.js'],
+  },
   // Configuração base para deploy na Vercel
   base: './',
   
