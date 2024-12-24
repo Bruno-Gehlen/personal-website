@@ -1,37 +1,32 @@
 import { defineConfig } from 'vite'
+import path from 'path'
 
 export default defineConfig({
+  // resolve: {
+  //   alias: {
+  //     '@': path.resolve(__dirname, './'),
+  //     'typed.js': path.resolve(__dirname, './node_modules/typed.js/dist/typed.umd.js'),
+  //     'mathjax': path.resolve(__dirname, './node_modules/mathjax')
+  //   }
+  // },
   optimizeDeps: {
-    include: ['typed.js'],
+    include: ['typed.js', 'mathjax/es5/tex-mml-chtml.js']
   },
-  // Configuração base para deploy na Vercel
-  base: './',
-  
-  // Configurações de build
   build: {
-    // Gera source maps para melhor debugging
     sourcemap: true,
-    
-    // Otimiza o bundle final
     minify: 'terser',
-    
-    // Configurações de input e output
-    publicDir: 'public',
     outDir: 'dist',
     assetsDir: 'assets',
-    
-    // Otimizações de rollup
     rollupOptions: {
+      external: ['typed.js', 'mathjax'],
       output: {
-        manualChunks: {
-          // Separa vendors (bibliotecas externas) em chunks diferentes
-          vendor: ['typed.js']
+        globals: {
+          'typed.js': 'Typed',
+          'mathjax': 'MathJax'
         }
       }
     }
   },
-
-  // Configurações do servidor de desenvolvimento
   server: {
     port: 5123,
     open: true,
