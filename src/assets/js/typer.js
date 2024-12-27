@@ -1,4 +1,4 @@
-import Typed from './typed.js/dist/typed.module.js';
+import Typed from 'typed.js';
 
 var typed = new Typed('#typed-text', {
   strings: ["Particle Physics", "Mathematical Physics", "Front-end Dev."],

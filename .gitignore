@@ -9,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Arquivos de build e dist (se você estiver usando um bundler como Vite, Webpack, etc.)
+# Arquivos de build e dist (bundler Vite, Webpack, etc.)
 dist/
 build/
 out/
@@ -39,7 +39,7 @@ Thumbs.db
 
 # Arquivos de lock (lockfiles) gerados por gerenciadores de pacotes
 package-lock.json
-yarn.lock
+# yarn.lock
 pnpm-lock.yaml
 
 # Específicos de projetos com TypeScript (se aplicável)
