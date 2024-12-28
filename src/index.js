@@ -1,6 +1,4 @@
 // import './styles/main.scss'
-// import contrb from './assets/contrbGithub.png'
-// import Typed from 'typed.js'
 
 // Importar estilos de vendor
 import './assets/vendor/bootstrap/css/bootstrap.min.css'

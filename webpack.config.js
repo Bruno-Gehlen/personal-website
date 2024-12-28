@@ -1,7 +1,7 @@
 const path = require('path')
 const HTMLwebpackPlugin = require('html-webpack-plugin')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
         clean: true,
-        assetModuleFilename: '[name][ext]',
+        assetModuleFilename: 'ignore-assets/[name][ext]',
     },
     // devtool: 'source-map',
     devServer: {
@@ -31,8 +31,8 @@ module.exports = {
             {
                 test:/\.(scss|css)$/,
                 use: [
-                    // {loader: MiniCssExtractPlugin.loader},
-                    'style-loader',
+                    {loader: MiniCssExtractPlugin.loader},
+                    // 'style-loader',
                     'css-loader',
                     'sass-loader'
                 ]
@@ -47,29 +47,45 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /\.(png|svg|jpeg|jpg|webp|gif)$/i,
-                type: 'asset/resource'
-            }
             // {
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     use: [
+            //       {
+            //         loader: 'file-loader',
+            //         options: {
+            //           outputPath: 'images',
+            //           name: 'ignore-assets/[name][ext]',
+            //         },
+            //       },
+            //     ],
+            //   },
+            //   {
             //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
-            //     type: 'asset/resource'
-            //   }
+            //     use: [
+            //       {
+            //         loader: 'file-loader',
+            //         options: {
+            //           outputPath: 'fonts',
+            //           name: 'ignore-assets/[name][ext]',
+            //         },
+            //       },
+            //     ],
+            //   },
         ]
     },
     plugins: [
         new HTMLwebpackPlugin({
-            title: 'Webpack App',
+            title: 'My personal website',
             filename: 'index.html',
-            template: 'src/index.html'
+            template: 'src/template.html'
         }),
         // new BundleAnalyzerPlugin({
         //     openAnalyzer: false,
         //     analyzerPort: 5001
         // }),
-        // new MiniCssExtractPlugin({
-        //     // filename: "src/assets/css/"
-        // }),
+        new MiniCssExtractPlugin({
+            // filename: "src/assets/css/"
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { 

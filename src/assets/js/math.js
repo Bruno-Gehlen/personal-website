@@ -1,4 +1,4 @@
-import * as MathJax from 'mathjax/es5/tex-mml-chtml.js';
+import * as MathJax from 'mathjax-node';
 
 MathJax.config({
   tex: {
