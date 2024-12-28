@@ -3,43 +3,43 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Open Sans'; 
-  src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  src: url('../../../public/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: normal; 
   font-style: normal;  
 }
 @font-face {
   font-family: 'Montserrat'; 
-  src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'); 
+  src: url('../../../public/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'); 
   font-weight: normal; 
   font-style: normal;  
 }
 @font-face {
   font-family: 'Lato'; 
-  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+  src: url('../../../public/assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
   font-weight: normal; 
   font-style: normal;  
 }
 @font-face {
   font-family: 'Commit Mono';
-  src: url('../fonts/CommitMono/CommitMono VariableFont.woff2') format('woff2');
+  src: url('../../../public/assets/fonts/CommitMono/CommitMono VariableFont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Raleway';
-  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  src: url('../../../public/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  src: url('../../../public/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PoppinsBold';
-  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  src: url('../../../public/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -63,7 +63,7 @@ body::before {
   content: "";
   position: fixed;
   background-color: #040404;
-  background-image: url("../img/background.jpg");
+  background-image: url("../../../public/assets/img/background.jpg");
   background-size: cover;
   left: 0;
   right: 0;
